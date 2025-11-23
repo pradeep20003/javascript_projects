@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click the button color change both the boxes</title>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;">
+    <div id="box" style="width: 200px; height: 200px; border: 2px solid;">  box-1</div>
+     <div id="box1" style="width: 200px; height: 200px; border: 2px solid;"> box -2</div>
+
+    <button id="btn">Click me</button>
+    </div>
+    <script>
+            const colorbox = document.getElementById("box")
+            const colorbox2 = document.getElementById("box1")
+            const btn = document.getElementById("btn")
+            btn.onclick = function(e){
+            const num = Math.round(Math.random()*10000000).toString(16);
+            const num1 = `#${num}`; 
+             const num2 = Math.round(Math.random()*10000000).toString(16);
+            const num3 = `#${num2 }`; 
+            colorbox.style.backgroundColor = num1
+            colorbox2.style.backgroundColor = num3
+        }
+
+    </script>
+</body>
+</html>

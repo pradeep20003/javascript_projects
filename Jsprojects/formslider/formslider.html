@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormSlider</title>
+  <link rel="stylesheet" href="formslider.css">
+  </head>
+  <body>
+    <div class="main">
+      <form class="form1">
+        <h1 style="color: white;">Create Account</h1>
+        <input type="email" name="" placeholder="E-mail"/>
+        <input type="password" name="" placeholder="Password" />
+        <input type="password" name="" placeholder="Confirm Password" />
+        <div class="btns" >
+          <button type="button" onclick="nextToForm2()">Next</button>
+        </div>
+      </form>
+
+        <form class="form2">
+        <h1  style="color: white;">Personal details</h1>
+        <input type="text" name="" placeholder="First-Name" />
+        <input type="taxt" name="" placeholder="Last-Name" />
+        <input type="number" name="" placeholder="Mobile Number" />
+        <div class="btns" >
+          <button type="button" onclick="prevToForm1()">Prev</button>
+           <button type="button" onclick="nextToForm3()">Next</button>
+        </div>
+      </form>
+
+        <form class="form3">
+        <h1  style="color: white;">Social links</h1>
+        <input type="text" name="" placeholder="LinkedIn" />
+        <input type="taxt" name="" placeholder="Github" />
+        <input type="text" name="" placeholder="twitter" />
+        <div class="btns" >
+          <button type="button" onclick="prevToForm2()">Prev</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="progress">
+        <div class="progressBar"></div>
+        <div>Step1</div>
+        <div>Step2</div>
+        <div>Step3</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="formslider.js"></script>
+</html>

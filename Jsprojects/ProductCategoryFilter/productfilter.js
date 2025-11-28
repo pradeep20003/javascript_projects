@@ -3,7 +3,6 @@ var CategoryListDiv = document.querySelector(".CategoryList");
 let allCat = [];
 let displayProduct = async (allcheckCat = []) => {
   productDiv.innerHTML = "";
-
   let product = await fetch("https://fakestoreapi.com/products");
   let finalproduct = await product.json();
   finalproduct.forEach((element) => {
